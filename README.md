@@ -1,8 +1,33 @@
+# Brief 14 - Sécurisation d'une Application avec JWT
+
+## Description
+
+Ce brief a permis de mettre en pratique l'implémentation du JWT, mais en NodeJS.
+
 # Commande pour lancer le projet
+
+```bash
 node to_complete/index.js
+```
 
-puis se connecter sur localhost:8080
+**--> Puis ouvrir un navigateur et aller à l'adresse http://localhost:3000/login**
 
+## Installation
+
+1. **Clôner le dépôt afin de récupérer le projet**
+
+   ```bash
+   git clone https://github.com/corantoine/Brief14.git
+
+   ```
+
+## Utilisation
+
+- Effectuer un test en se connectant avec le profil **user**
+- Vérifier l'accès à la route '/user' (ok)
+- Vérifier l'accès à la route '/admin', le message suivant doit apparaître : "Access denied"
+- Effectuer un test en se connectant avec le profil **admin**
+- Vérifier l'accès aux routes '/admin' et '/user', les deux doivent fonctionner.
 
 # Rassurer le client sur le niveau de sécurité de JWT.
 
@@ -27,5 +52,3 @@ puis se connecter sur localhost:8080
 **Développeur** : Exactement. Sans connaître la clé secrète, un pirate ne peut pas générer une signature valide pour un contenu modifié. Cela garantit que seules les informations authentiques et non modifiées sont acceptées par notre serveur.
 
 **Client** : Je suis rassuré, merci pour l'explication !
-
-**Développeur** : Avec plaisir !
